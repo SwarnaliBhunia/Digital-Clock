@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body onload="initClock()">
-
-<div class="datetime">
-  <div class="date">
-     <span id="dayname"> Day</span>,
-     <span id="month">Month</span>
-     <span id="daynumber">00 </span>,
-     <span id="year">Year</span>
-    </div>
-     
-  <div class="time">
-      <span id="hour">00</span>:
-      <span id="minute">00</span>:
-      <span id="seconds">00</span>
-      <span id="period">AM</span>
-    </div>
-    </div>
-
-<script type="text/javascript" src="index.js">
-  
-  /*function updateClock(){
+function updateClock(){
     var now = new Date();
     var dname = now.getDay();
     var mo = now.getMonth();
@@ -36,10 +7,10 @@
     var hou = now.getHours();
     var min = now.getMinutes();
     var sec = now.getSeconds();
-    var pe = "AM" ;*/
+    var pe = "AM" ;
 
     /*setting the hour*/
-    /*if(hou==0){
+    if(hou==0){
         hou = 12;
     }
     if(hou>12){
@@ -68,7 +39,4 @@
 function initClock(){
     updateClock();
     window.setInterval("updateClock()", 1);
-}*/
-</script> 
-</body>
-</html>
+}
